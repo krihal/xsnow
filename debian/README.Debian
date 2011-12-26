@@ -1,0 +1,15 @@
+Note on xsnow in KDE
+
+If there is no snow in your KDE, please follow the intructions below.
+
+Right-click on your desktop and select Configure Desktop from the popup
+menu. When the dialog box appears, click on the Behavior icon in the left hand
+side bar. A three tabbed window will appear on the right hand side. Look near
+the top on the General tab and you'll see check box with the words "Allow
+programs in desktop window" (see the image below). Click that check box, then
+click the OK button.
+
+Xsnow will wash away your icons in KDE. That is the normal behaviour. Please
+see manpage for further information.
+
+ -- Cai Qian <caiqian@debian.org>  Thu, 08 Dec 2005 18:01:00 +0000

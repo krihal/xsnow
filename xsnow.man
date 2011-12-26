@@ -1,0 +1,248 @@
+.TH XSNOW 1 "Release 6" "X Version 11"
+.SH NAME
+xsnow \- let it snow on your desktop and windows
+.SH SYNOPSIS
+.B xsnow
+[-option .,..]
+.SH DESCRIPTION
+Xsnow lets it snow on your desktop and windows (sic!).
+.SH OPTIONS
+.TP 8
+-display display_name
+Drop the snowflakes on the given display. Make sure the display is nearby, 
+so you can hear them enjoy...
+.TP 8
+-snowflakes num_snowflakes
+This is the number of snowflakes. Default is 100, max is 1000.
+.TP 8
+-sc snowflake_color
+Use the given string as the color for the flakes instead of the default "snow".
+.TP 8
+-bg background_color
+Use the given string as the color for the background. Note that the usual
+default desktop pattern consisting of 50% white 50% black doesn't 
+particularly look good with Xsnow. 
+.TP 8
+-solidbg
+When using solid colored backgrounds specifying this option MAY greatly
+improve performance. (Not on SUN Solaris 2.5.1 for example!)
+.TP 8
+-tc tree_color
+Use the given string as the color for the trees. 
+.TP 8
+-slc sleigh_color
+This option is obsolete in version 1.41.
+Used to be the color for the sleigh. Santa has decided not to have you 
+interfere with the color of his means of transportation any more.
+.TP 8
+-santa santa_size
+There are 3 sizes of Santa: 0, 1 and 2. Default is 2. Thanks to Thomas
+Linder for the (big) Santa!
+.TP 8
+-santaspeed santa_speed
+The speed Santa should not exceed if he doesn't want to get fined. 
+The default speed for Santa size 0 is 1, for Santa 1 it's 2 and for 
+Big Santa it's 4.
+.TP 8
+-santaupdatefactor factor
+This is to slow down Santa with respect to the snow. Default the value
+is 3, meaning that Santa is moved only every third time the snow flakes
+move. Specifying zero here is considered very naughty.
+.TP 8
+-delay delay
+This is the number of milliseconds delay after updating everything.
+Default is 50 milliseconds, i.e. 20 updates per second max.
+.TP 8
+-unsmooth
+.br
+If you specify this option the snowflakes will 'whirl' more dramatically,
+resulting in a somewhat jerkier movement.
+.TP 8 
+-whirl
+This sets the whirl factor, i.e. the maximum adjustment of the horizontal 
+speed. The default value is 4.
+.TP 8
+-nowind
+Default it gets windy now and then. If you prefer it quiet specify -nowind.
+.TP 8
+-windtimer period
+With -windtimer you can specify how often it gets windy. It's sort of a
+period in seconds, default value is 30.
+.TP 8
+-xspeed -yspeed
+These options set the maximum horizontal and vertical speed. The default X
+maximum speed is 4, the default maximum Y speed is 8.
+.TP 8
+-wsnowdepth -ssnowdepth
+This sets the maximum thickness of the snow on top of windows and
+at the bottom of the display respectively. The default snowdepth for 
+windows is 15, at the bottom of the screen the default is 50.
+.TP 8
+-offset 
+With -offset you can specify that snow starts building up a number of
+pixels lower or higher. This is handy if you use twm and squeezed window
+titles. 
+.TP 8
+-notrees 
+Do not display the trees.
+.TP 8
+-nosanta
+Do not display Santa Claus running all over the screen.
+.TP 8
+-norudolf
+No Rudolf.
+.TP 8
+-nokeepsnow
+Do not have snow sticking anywhere.
+.TP 8
+-nokeepsnowonwindows
+Do not keep snow on top of the windows.
+.TP 8
+-nokeepsnowonscreen
+Do not keep snow at the bottom of the screen.
+.TP 8
+-nonopopup
+Xsnow takes care to not let it snow on Pop-up windows, due to their
+nature. If however, you use an Xserver that has backing store on for
+all windows, then specify this option. Symptom would be that no snow
+is kept on any window, but only at the screen bottom.
+.TP 8
+-version
+Prints the current Xsnow version and does not start Xsnow.
+The current version (of this man page) is 1.42, December 14th 2001
+.SH EXAMPLES
+.TP 8
+xsnow
+.br
+Starts xsnow
+.TP 8
+xsnow&
+(Mind the empersand) Starts xsnow as a background process. Use this if you start xsnow from
+a script. To stop xsnow find the process id (pid) as follows: ps -ef|grep xsnow
+and use the kill command to stop xsnow.
+.TP 8
+xsnow -bg SkyBlue3 -sc snow  
+.br 
+Sets the background to a bluish color and lets it snow white.
+.TP 8
+xsnow -ssnowdepth 100
+Starts with a thin layer of snow that gradually builds up at the bottom 
+of the screen.
+.TP 8
+xsnow -santa 2 -santaspeed 10
+Gives you the biggest Santa at a speed that is hardly legal.
+.TP 8
+xsnow -delay 100 -notrees
+For slow systems use longer delay and don't draw the trees.
+.TP 8
+xsnow -snowflakes 1000 -delay 0
+.br 
+Uses the maximum number of snowflakes and runs as fast as possible.
+.TP 8
+xsnow -bg SkyBlue3 -solidbg
+.br 
+Sets the background to a bluish color and specify -solidbg for increased
+performance (depending on your system!).
+.SH FILES
+See /usr/lib/X11/rgb.txt for the list of colors and their respective 
+poetic names, like Chartreuse and SkyBlue3.
+.SH BUGS
+See xroach(1)
+.SH AUTHORS
+Rick Jansen (rja@euronet.nl)
+.br
+WWW: http://www.euronet.nl/~rja/
+.SH COPYRIGHT
+Copyright 1984,1988,1990,1993-1995,2000-2001 by Rick Jansen (rja@euronet.nl)
+
+Xsnow is available freely and you may give it to other people as is,
+but I retain all rights. Therefore it does not classify as 'Public
+Domain' software. However, it *is* allowed to package Xsnow for Unix/Linux
+distributions, CD-Roms etc, and to make the necessary changes to
+makefiles etc. to facilitate this. 
+
+.SH CREDITS
+Xsnow borrows some code from xroach by J.T. Anderson (jta@locus.com)
+
+Xsnow uses vroot.h for use with virtual window managers. 
+vroot.h is copyright 1991 by Andreas Stolcke, copyright 1990 by
+Solbourne Computer Inc. (stolcke@ICSI.Berkeley.EDU)
+
+The big Santa was made by Thomas Linder (Thomas.Linder@gmx.net)
+
+The idea and code for wind are from Eiichi TAZOE (tazoe@yamato.ibm.co.jp,
+tazoe@vnet.ibm.com).
+
+Xsnow 1.42 works with KDE, thanks to Robin Hogan <R.J.Hogan@reading.ac.uk>,
+who figured this out for xpenguins 2.2
+
+.SH NOTES
+.B System load
+.br
+Xsnow itself doen't use very much CPU time, but it can load the X server
+and/or network quite substantially. Use less snowflakes and a bigger delay
+in such a case. On a standalone workstation there usually will not be 
+be any problem. Another improvement can be to specify a solid background
+color with -bg and with this also specify the option -solidbg. This may 
+greatly improve performance! DO check this though, on some systems (SUN
+Solaris 2.5.1) performance is much WORSE.
+
+.B KDE (etc)
+.br
+Xsnow now works with KDE, and some other root window occupying desktop
+management systems. On KDE your icons will be snowed away magnificently,
+although that is not harmful for your icons really. Simply wipe with
+a small window where you thought your trash was, and see it appear.
+Now you need to scrape your computer screen too, not just your car's.
+
+.B SGI Irix 5.x
+.br
+Silicon Graphics and Irix 5.x users may not see any snow or Santa at all,
+as long the desktop icons are visible. To circumvent this problem issue
+this command:
+
+  /usr/lib/desktop/telldesktop quit
+
+The icons will disappear and Xsnow will work perfectly. To restart the
+desktop just start /usr/lib/desktop/startdesktop or select Desktop->Home
+Directory from the toolchest.
+
+It's even possible to have both - desktop icons and xsnow (and even
+multiple desks). You need to modify the window manager's resource file
+4DWm, the file ~/.desktop-`hostname`/4DWm. Example:
+
+*Global.backgroundDescription:   -execute /etc/killall -TERM xsnow ;
+/usr/local/bin/xsnow
+.br
+*Desk 1.backgroundDescription:   -execute /etc/killall -TERM xsnow ;
+/usr/local/bin/xsnow
+.br
+*Desk 2.backgroundDescription:   -execute /etc/killall -TERM xsnow ;
+/usr/local/bin/xsnow
+.br
+
+Restart the window manager (4Dwm) from the toolchest and Xsnow should 
+appear. What this does is stop the currently running Xsnow and start 
+a new one when you switch to another desktop. 
+
+.B HP and hp-ux
+.br
+HP also uses a Workspace Manager which may interfere with Xsnow.
+If Xsnow does not appear:
+In the "Style Manager", choose "Backdrop" and select "NoBackdrop".
+You should now be able to run Xsnow.
+
+.B Snow does not stick?
+.br
+On black-and-white X terminals snow may not stick to windows because
+backing store is on. Try specifying the option -nonopopup when 
+starting Xsnow.
+
+.B Snow hovering above windows?
+.br
+If you use twm it is possible you see the snow layer hovering a little
+bit above your windows. In that case set BorderWidth 0 in your .twmrc
+file. If you use windows with 'squeezed title bars' specify a -offset to
+get the snow on the windows itself.
+.SH "SEE ALSO"
+snowplough(1), your_travel_agent(1)

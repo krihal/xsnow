@@ -1,0 +1,16 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## 03_Imakefile.dpatch by <mlazar@kerio.com>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: New patch generated from xsnow 1.42-7 diff.gz
+
+@DPATCH@
+
+--- xsnow-1.42.orig/Imakefile
++++ xsnow-1.42/Imakefile
+@@ -1,4 +1,4 @@
+-SYS_LIBRARIES = -lm -lXpm
++SYS_LIBRARIES = -lXpm
+ LOCAL_LIBRARIES = $(XLIB)
+ DEPLIBS = $(DEPXLIB)
+ SRCS = xsnow.c toon_root.c xsnow.h vroot.h

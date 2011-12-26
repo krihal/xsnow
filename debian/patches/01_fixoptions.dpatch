@@ -1,0 +1,51 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## 01_fixoptions.dpatch by  <caiqian@localhost.localdomain>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: -nokeepsnow will not update screen if there are expose events. ie. after
+## DP: start xsnow, move away a window, the snow will not show on the area of
+## DP: previous window.
+## DP:
+## DP: -nokeepsnowonwindows will cause snow erased on the bottom of screen as
+## DP: well.
+
+@DPATCH@
+
+--- xsnow-1.42.orig/xsnow.c	2001-12-15 23:44:47.000000000 +0000
++++ xsnow-1.42/xsnow.c	2005-12-27 16:18:47.923074008 +0000
+@@ -653,7 +653,7 @@
+ 				if (stilltddr) {
+ 					stilltddr = !DDLT();
+ 				}
+-				if (!NoKeepSnow) {
++
+ 					switch (ev.type) {
+ 							case Expose:    
+ 									#if debug
+@@ -746,7 +746,7 @@
+ 					} 
+ 				}  
+ 			 
+-			}  
++
+ #if debug
+ #endif
+ 			uSsleep(snowDelay);
+@@ -1362,8 +1362,6 @@
+ 	XOffsetRegion(rscrr, 0,MaxYStep+MaxSnowFlakeHeight);	
+ 	XSubtractRegion(Wr,rscrr, rscrr);
+ 	if (NoKeepSWin) {
+-		XDestroyRegion(snscr);
+-		snscr = XCreateRegion();
+ 		return;
+ 	}
+ 	XUnionRegion(rscrr,snscr, snscr);
+@@ -1378,7 +1376,7 @@
+ 		XOffsetRegion(sar, 0,-MaxWinSnowDepth);
+ 		XSubtractRegion(sar,Wr, sar);
+ 	}
+-	if (!NoKeepSWin) {
++	if (!NoKeepSBot) {
+ 		AllowRect.x = 0;
+ 		AllowRect.y = display_height - MaxScrSnowDepth;
+ 		AllowRect.width = display_width - 1;

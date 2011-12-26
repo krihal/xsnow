@@ -1,0 +1,21 @@
+/* XPM */
+static char *RegularSantaRudolf3[] = {
+/* width height num_colors chars_per_pixel */
+"    56     8        6            1",
+/* colors */
+". c #ffffff",
+"# c #ff9999",
+"a c #ff0000",
+"b c none",
+"c c #663333",
+"d c #000000",
+/* pixels */
+"bbbaa.bbbbbbbbbbbbbbbbbbbbbcbbbbbbbbbbbbbcbbbbbbbbbbbbbc",
+"bb.b#bbbbbbbbbbbbbbbbbbbcbcbbbbbbbbbbbcbcbbbbbbbbbbbcbcb",
+"bbbb#ab.bbbbbbbbbbbbbbbbbcbbbbbbbbbbbbbcbbbbbbbbbbbbbcbb",
+"bdbbaaabddbdbdbbdbbbcbbbbcbbbbbbbbcbbbbcbbbdbdbbcbbbbcab",
+"bdb...adbbdbbbbbbbbbbcccccbbbbbbbbbcccccbbbbbbbbbcccccbb",
+"bddddadbbbdbbbbbbbbbbccbcbbbbdbdbbbccbcbbbbbbbbbbccbcbbb",
+"bbdbdba.bddbbbbbbbbbbbcbcbbbbbbbbbbbcbcbbbbbbbbbbbcbcbbb",
+"ddddddddddbbbbbbbbbbbbccbbbbbbbbbbbbccbbbbbbbbbbbbccbbbb"
+};

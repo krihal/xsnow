@@ -1,0 +1,43 @@
+/* XPM */
+static char *MediumSantaRudolf3[] = {
+/* width height num_colors chars_per_pixel */
+"    88    17       19            1",
+/* colors */
+". c #ffffff",
+"# c #ff9933",
+"a c #ff0000",
+"b c #f1f1f1",
+"c c #cccccc",
+"d c #cc9999",
+"e c #cc9933",
+"f c #cc6633",
+"g c #cc0000",
+"h c none",
+"i c #c0c0c0",
+"j c #993333",
+"k c #990000",
+"l c #663300",
+"m c #111111",
+"n c #009900",
+"o c #0066cc",
+"p c #003399",
+"q c #000000",
+/* pixels */
+"hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhjhjjjhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhjhhhhh",
+"hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhjjjhhhhhhhhhhhhhhhhhjjhjjjhhhhhhhhhhhhjjhjjjhhh",
+"hhhhhhhhhhgghhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhjhhhhhhhhhhhhhhhhhhjjjhhhhhhhhhhhhhhhhjjhhhhh",
+"hhhhhhhhhgggghhhhhhhhhhhhhhhhhhhhhhhhhhhhhhjjhjjhhhhhhhhhhhhhhhjjhhjjhhhhhhhhhhhhhjhhjjj",
+"hhhhhhhhkgkkgihhhhhhhhhhhhhhhhhhhhhhhhhhhhhhjjjhhhhhhhhhhhhhhhhhjjhjhhhhhhhhhhhhhhhjhjhh",
+"hhhhhhh.hhkgqdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhfffhhhhhhhhhhhhhhhhhjfffhhhhhhhhhhhhhhhjffhh",
+"hhhhhhhhghccccdhhhhhhhhhhhhhhhhhhhhhhhhhffmflfmfhhhhhhhhhhhhhffmllffhhhhhhhhhhhhffmllffh",
+"hhhhphhcghhbcbbhgg.mhmhmhmhhhhhhhffffffffffmfjjfmhmhhhffffffffffmfjffmhhhffffffffffmfjaa",
+"hcooggg##jhgkbgghhhhhhhhhhmhmhmhjffffffffffjmhhjhhhhmffffffffffffmhflhhmffffffffffffmhaa",
+"n#nnbgopoojgggkhhhhhhhhhhhhhhhhhjfffjfffffjjmmhhhhhhhfffjjfffffjfmmhhhhhfffjjfffffjfmmhh",
+"nnnehhoooojkgkgghjjmmmmmmmmmmmmmjfffjjjjfffjhhmmmmmmmfffjjjjjffjhhmmmmmmfffjjjjjffjhhhhh",
+"jnnnhhoopojkkgggbhhjhhhhhhhhhhhhjffjhhhhhhfjjhhhhhhhhhfjhhhhhhhfjhhhhhhhhfjhhhhhhhfjhhhh",
+"hhhhhhhhhhjhkkkgghhjhhhhhhhhhhhhhffhhhhhhhhhfjhhhhhhhffjhhhhhhhhffhhhhhhhfjhhhhhhhhffhhh",
+"llllllllllllllllllljhhhhhhhhhhhhffhhhhhhhhhhhmhhhhhhhfjhhhhhhhhhhjhhhhhhfjhhhhhhhhhhjhhh",
+"hhhlhhhhhhhhhlhh..hjhhhhhhhhhhhfhjhhhhhhhhhhhhhhhhhhfhjhhhhhhhhhhhhhhhhfhjhhhhhhhhhhhhhh",
+"hhhlhhhhhhhhhlhhhqjhhhhhhhhhhhhfhmhhhhhhhhhhhhhhhhhhmhmhhhhhhhhhhhhhhhhmhmhhhhhhhhhhhhhh",
+"jjjjjjjjjjjjjjjjjjhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+};

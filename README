@@ -1,0 +1,174 @@
+Copyright 1984,1988,1990,1993-1995,2000-2001 by Rick Jansen, all rights reserved.
+
+ X S N O W
+       *
+ *   *
+   *       *
+       *
+  *
+
+December 14th 2001
+
+Latest news:
+------------
+December 2001:
+All you KDE-users can now be even happier with a KDE-enabled Xsnow 1.42!
+The snow will magnificently wipe out your icons, but not to worry, they're
+not really gone. By wiping with a window or something you can make them
+reappear. Car owners are used to this for years. 
+
+December 2000:
+After 5 years here's a new Xsnow! The program has been around bit, and
+is now even making it snow on many Windows machines, so it's high time
+for an improved verson for X. Xsnow 1.41 works with modern X servers
+like XFree86, where older versions made snow build up somewhere in the
+sky at times, defying gravity.
+
+Xsnow 1.41 features a new Santa, many thanks to Thomas Linder
+(Thomas.Linder@gmx.net).
+
+It is now possible to slow Santa down. See the option -santaupdatefactor
+
+
+Where to get Xsnow:
+-------------------
+Xsnow is available from the author's WWW page:
+  
+  http://www.euronet.nl/~rja/
+
+Click on the appropriate item and the tar file will be downloaded
+upon your request.
+
+Xsnow is also archived at ftp.x.org in the contrib/games directory.
+
+
+How to compile:
+---------------
+To build:
+	xmkmf
+	make depend
+	make
+ 
+To run:
+	./xsnow
+    or:
+	./xsnow&  (in the background)
+ 
+To install (be root):
+	make install
+	make install.man
+
+If xmkmf does not work and you cannot get a working Makefile that way
+then try compiling yourself, eh, xsnow this way: 
+
+	cc -o xsnow snow.c  -lXext -lX11 -lXpm -lm -lsocket -lnsl
+ 
+gcc, SUN Solaris users without a C-compiler, but with gcc installed,
+try the following two commands. The first compiles Xsnow, the second
+links Xsnow.
+ 
+	gcc -c -O2 -I/usr/openwin/include -DSVR4 -DSYSV xsnow.c
+	gcc -o xsnow xsnow.o -O2 -L/usr/openwin/lib -lXext -lX11 -lXpm -lm -lsocket -lnsl
+ 
+Note: Xsnow-1.41 needs the Xpm library. It is available from:
+
+	ftp://ftp.x.org/contrib/libraries/
+
+The current Xpm version is xpm3.4k                                                       
+
+
+VMS
+---
+This distribution contains a file 'make.com' to build Xsnow on
+VMS systems, and 'xsnow.hlp'. To build type '@make' in the
+xsnow directory. Another make.com is make2.com 
+
+Virtual window managers
+-----------------------
+For compatibility with virtual window managers Xsnow uses 'vroot.h',
+an include file that makes X programs compatible with window managers
+like swm and tvtwm. The complete vroot distribution is available from
+'ftp.x.org' in the contrib directory as 'vroot.shar.Z'.
+Vroot was written by Andreas Stolcke <stolcke@ICSI.Berkeley.EDU>, 9/7/90
+and is copyright 1991 by Andreas Stolcke, copyright 1990 by Solbourne 
+Computer Inc.
+
+Silicon Graphics IRIX 5.x
+------------------------
+Silicon Graphics and Irix 5.x users may not see any snow or
+Santa at all, as long the desktop icons are visible. To
+circumvent this problem issue this command:
+
+   /usr/lib/desktop/telldesktop quit
+
+The icons will disappear and xsnow will work perfectly. To
+restart the desktop just start /usr/lib/desktop/startdesktop
+or select Desktop->Home Directory from the toolchest.
+
+It's even possible to have both - desktop icons and xsnow
+(and even multiple desks). You need to modify the window
+manager's resource file 4DWm, the file 
+
+  ~/.desktop-`hostname`/4DWm. 
+
+Example:
+
+*Global.backgroundDescription:   -execute /etc/killall -TERM
+xsnow ; /usr/local/bin/xsnow
+*Desk 1.backgroundDescription:   -execute /etc/killall -TERM
+xsnow ; /usr/local/bin/xsnow
+*Desk 2.backgroundDescription:   -execute /etc/killall -TERM
+xsnow ; /usr/local/bin/xsnow
+
+Restart the he toolchest and Xsnow should appear. What this
+does is stop the currently running Xsnow and start a new one
+when you switch to another desktop.
+
+HP and hp-ux:
+-------------
+HP also uses a Workspace Manager which may interfere with Xsnow.
+If Xsnow does not appear:
+In the "Style Manager", choose "Backdrop" and select "NoBackdrop".
+You should now be able to run Xsnow.
+
+
+Update history
+--------------
+ 1.22 Really building up snow at bottom of screen
+ 1.22 A choice of Santa's. Thanks to Holger Veit (Holger.Veit@gmd.de)
+      for Santa no. 2. Santa 1 was derived from 2 by scaling down.
+ 1.23 Aaaargh! gnu C doesn't like the initialization of the new
+      Santa pixmaps. Extra braces do the trick, which is so often the case
+ 1.24 Deleted PaintSnowAtBottom. It's more of a surprise this way.
+ 1.24 Bug removed with windows off-screen to the left
+ 1.25 Rudolf's red nose. Silly. Grmbll.
+ 1.25 Bug with -nokeepsnowonwindows removed
+ 1.27 Bug with erasing snow on top of windows removed
+      Erasing of snow at bottom of screen improved in case of expose event
+ 1.30 Performance improved. Wind.
+ 1.31 Make.com and xsnow.hlp for VMS
+ 1.32 unsigned long snowDelay changed to long, as strtoul is troublesome
+ 1.35 Snow really builds up on windows now, and does not snow on pop-ups.
+ 1.37 Offset for certain window managers like twm, nokeepsnowonwindows
+      and nokeepsnowonscreen are back.
+ 1.38 Santa is a real snow plough now.
+ 1.39 usSleep fixed for VMS. Bug resulted in using too much resources.
+ 1.40 -solidbg for improved performance, memory leak fixed.
+ 1.41 -santaupdatefactor, fix for X-servers that use backing store, new
+			Santa by Thomas Linder
+ 1.42 Xsnow now works with KDE
+
+ Copyright
+ ---------
+ Xsnow is available freely and you may give it to other people as is,
+ but I retain all rights. Therefore it does not classify as 'Public
+ Domain' software. It *is* allowed to package Xsnow for Unix/Linux 
+ distributions, CD-Roms etc, and to make the necessary changes to
+ makefiles etc. to facilitate this.
+
+Merry X-mas!
+
+Rick Jansen
+--
+rja@euronet.nl
+http://www.euronet.nl/~rja/

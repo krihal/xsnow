@@ -1,0 +1,4 @@
+#define snow00_width 3
+#define snow00_height 3
+static char snow00_bits[] = {
+   0x05, 0x02, 0x05};

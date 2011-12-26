@@ -1,0 +1,42 @@
+/* XPM */
+static char *MediumSanta2[] = {
+/* width height num_colors chars_per_pixel */
+"    88    17       18            1",
+/* colors */
+". c #ff9933",
+"# c #f1f1f1",
+"a c #cccccc",
+"b c #cc9999",
+"c c #cc9933",
+"d c #cc6633",
+"e c #cc0000",
+"f c none",
+"g c #c0c0c0",
+"h c #b2b2b2",
+"i c #993333",
+"j c #990000",
+"k c #663300",
+"l c #111111",
+"m c #009900",
+"n c #0066cc",
+"o c #003399",
+"p c #000000",
+/* pixels */
+"ffffffffffffffffffffffffffffffffffffffffffiiifffffffffffffffiififfffffffffffffiifififfff",
+"ffffffffffffffffffffffffffffffffffffffffiiiffffffffffffffffffiifiiffffffffffffffiififfff",
+"fffffffffffeefffffffffffffffffffffffffffffiffffffffffffffffffffiffffffffffffffffffifffff",
+"fffffffffjjeeefffffffffffffffffffffffffffffiifiifffffffffffffffiifffffffffffffffffiifffi",
+"ffffffffejjeeegfffffffffffffffffffffffffffffiiifffffffffffffffffiifiiffffffffffffffiiiif",
+"fffffff#fffeblbfffffffffffffffffffffffffffffdddfffffffffffffffffidddfffffffffffffffiddff",
+"fffffffffffa#babffffffffffffffffffffffffddldkdldfffffffffffffddlkkddffffffffffffddlkkddf",
+"ffffffffeffaaaaffffffffffffffffffddddddddddldiidflflffddddddddddlddddflflddddddddddldidk",
+"fff##feaaifejjheee#llffllffllfflfddddddddddilffffffffddddddddddddlfdifffddddddddddddlfif",
+"faaneee.efieeejjfffffffffffffffffdddidddddiillllllllfdddiidddddidllllllfdddiidddddidlfff",
+"mmcm#ennnnijejeefiilllllllllllllldddiiiiddddfffffffflidddiiiddddffffffflidddiiiddddfffff",
+"imcmffnonnijjeee#ffiffffffffffffffddffffffddffffffffffddffffffddfffffffffddffffffddfffff",
+"ffffffffffifjjjeeffiffffffffffffffddfffffffiffffffffffddfffffffdfffffffffddfffffffdfffff",
+"kkkkkkkkkkkkkkkkkkkiffffffffffffffidffffffldffffffffffddffffffpdfffffffffddffffffpdfffff",
+"fffkfffffffffkff##fiffffffffffffffifffffffffffffffffffdffffffffffffffffffdffffffffffffff",
+"fffifffffffffifffpifffffffffffffffpfffffffffffffffffffpffffffffffffffffffpffffffffffffff",
+"iiiiiiiiiiiiiiiiiiffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+};

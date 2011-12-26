@@ -1,0 +1,174 @@
+xsnow (1:1.42-8) unstable; urgency=low
+
+  * Adopting package (Closes: #476129)
+  * debian/control
+    - set myself as maintainer
+    - bump Standards-Version to 3.8.0
+  * debian/copyright
+    - set myself as maintainer
+  * fix lintian warning patch-system-but-direct-changes-in-diff
+    - add file debian/patches/02_manpage.dpatch
+    - add file debian/patches/03_Imakefile.dpatch
+  * debian/patches/vroot.h => debian/patches/04_vroot.dpatch
+    - convert direct copy of the file to dpatch
+  * debian/rules
+    - clean target: remove Makefile - it is automaticaly generated
+    - use dpatch.make (simplify the rules file)
+
+ -- Martin Lazar <mlazar@email.cz>  Tue, 28 Oct 2008 20:57:49 +0100
+
+xsnow (1:1.42-7) unstable; urgency=low
+
+  * QA upload.
+    + Set maintainer to QA group.
+  * Replace xutils with xutils-dev in Build-Depends.
+  * Explain in debian/copyright that and why this package is
+    in non-free.
+  * Add lintian override for menu-command-not-in-package
+    and for hyphen-used-as-minus-sign.  Use dh_lintian
+    to install it.
+  * Bump debhelper compat level to 7.
+  * Fix handling of CFLAGS and remove unused -lm.
+
+ -- Frank Lichtenheld <djpig@debian.org>  Wed, 06 Aug 2008 15:51:01 -0300
+
+xsnow (1:1.42-6) unstable; urgency=low
+
+  * Add {misc:Depends}
+  * Patch broken -nokeepsnowonwindows and -nokeepsnow options
+  * Improve menu
+  * Change subsection to x11/games
+
+ -- Cai Qian <caiqian@debian.org>  Sat, 29 Dec 2005 22:33:08 +0000
+	
+xsnow (1:1.42-5xmas) unstable; urgency=low
+
+  * Xmas version.
+  * Adjust debian/rules to make package cleaner and simpler.
+
+ -- Cai Qian <caiqian@debian.org>  Sat, 24 Dec 2005 13:55:08 +0000
+
+xsnow (1:1.42-4) unstable; urgency=low
+
+  * Fix typos in README.Debian and debian/control.
+  * Rewrite debian/rules to use debhelper (>= 5).
+  * Remove hard coding postrm, prerm and postinst scripts.
+
+ -- Cai Qian <caiqian@debian.org>  Thu, 22 Dec 2005 17:37:08 +0000
+	
+xsnow (1:1.42-3) unstable; urgency=low
+
+  * Wrote README.Debian including some FAQs related to xsnow on KDE.
+
+ -- Cai Qian <caiqian@debian.org>  Thu, 08 Dec 2005 18:01:00 +0000
+
+xsnow (1:1.42-2) unstable; urgency=low
+
+  * Used vroot.h from xscreensaver 4.23.
+
+ -- Cai Qian <caiqian@debian.org>  Sun, 06 Nov 2005 11:03:00 +0000
+	
+xsnow (1:1.42-1) unstable; urgency=low
+
+  * New maintainer. (Closes: #329485)
+  * New upstream release. (Closes: #224077, #283390)
+  * Used jwz's vroot.h that uses env XSCREENSAVER_WINDOW.
+  * Menu file goes to /usr/share/menu
+  * xsnow.man - belongs to section 6.
+  * Depended on psmisc, as menu file uses "killall".
+  * debian/copyright - fixed GPLed toon_root.c issue.
+  * debian/rules - fixed FSF address.
+  * debian/watch - Added watch file.
+
+ -- Cai Qian <caiqian@debian.org>  Sat, 05 Nov 2005 14:56:00 +0000
+
+xsnow (1:1.41-2) unstable; urgency=high
+
+  * Re-upload of 1.41 due to GPL violation in 1.42. The code to find the
+    correct root window in 1.42 is taken from xpenguin and licenced under the
+    GPL. Sorry KDE and GNOME users. Hopefully this is temporary. (closes: #250689)
+  * Fix menu. 
+  * Change Build-deps to reflect Xfree86 4.3 packaging.
+
+ -- Randall Donald <rdonald@debian.org>  Mon, 24 May 2004 12:24:55 -0700
+
+xsnow (1.42-4) unstable; urgency=low
+
+  * Use jwz's vroot.h that uses env XSCREENSAVER_WINDOW (closes: #217700) 
+
+ -- Randall Donald <rdonald@debian.org>  Tue,  4 Nov 2003 18:42:14 -0800
+
+xsnow (1.42-3) unstable; urgency=low
+
+  * New maintainer. (closes #130848)
+
+ -- Randall Donald <rdonald@debian.org>  Fri, 25 Jan 2002 18:52:16 -0800
+
+xsnow (1.42-2) unstable; urgency=low
+
+  * Orphaned this package.
+
+ -- Adrian Bunk <bunk@fs.tum.de>  Fri, 25 Jan 2002 14:00:24 +0100
+
+xsnow (1.42-1) unstable; urgency=high
+
+  * New upstream release.
+    - xsnow does now work better with transparent windows.
+      (closes: #51180)
+
+ -- Adrian Bunk <bunk@fs.tum.de>  Wed,  9 Jan 2002 08:59:54 +0100
+
+xsnow (1.41-1) unstable; urgency=low
+
+  * New maintainer.
+  * New upstream release. This release fixes the following bugs:
+    - The "-nokeepsnowonscreen" option is now working. (closes: #6896)
+    - xsnow clears snow pileup but doesn't reset "streaking" level
+      (closes: #13269)
+  * Added "-isp" to dpkg-gencontrol in debian/rules.
+  * /usr/doc -> /usr/share/doc (closes: #91731)
+  * /usr/X11R6/man -> /usr/share/man
+  * /usr/X11R6/bin -> /usr/bin
+  * Added build dependencies.
+  * Standards-Version: 3.1.1
+
+ -- Adrian Bunk <bunk@fs.tum.de>  Sat, 14 Apr 2001 20:15:43 +0200
+
+xsnow (1.40-6) unstable; urgency=low
+
+  * Improved description, "stolen" from Anselm Lingnau
+
+ -- Martin Schulze <joey@finlandia.infodrom.north.de>  Wed,  9 Dec 1998 23:39:10 +0100
+
+xsnow (1.40-5) frozen unstable; urgency=low
+
+  * Added Section: non-free/x11 (closes: Bug#14946, Bug#15347)
+  * New authors address in copyright file
+
+ -- Martin Schulze <joey@finlandia.infodrom.north.de>  Wed, 25 Mar 1998 01:16:18 +0100
+
+xsnow (1.40-4) frozen unstable; urgency=low
+
+  * New maintainer
+  * Pristine source
+  * Converted to my own packaging rules
+
+ -- Martin Schulze <joey@finlandia.infodrom.north.de>  Tue, 24 Mar 1998 01:06:20 +0100
+
+xsnow (1.40-3) unstable; urgency=low
+
+  * Non-maintainer release to fix broken man page permissions.
+
+ -- Joey Hess <joeyh@master.debian.org>  Wed, 10 Sep 1997 18:59:49 -0400
+
+xsnow (1.40-2) unstable; urgency=low
+
+  * Non-maintainer release. (Ignore previous upload of this same version, 
+    it was made in error.)
+  * New source format and general package reworking. Fixes #4281, #6076,
+    #9546
+  * Moved man page to section 6.
+  * Added a menu file.
+  * Libc6.
+
+ -- Joey Hess <joeyh@master.debian.org>  Wed, 10 Sep 1997 00:36:40 -0400

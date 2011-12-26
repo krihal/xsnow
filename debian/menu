@@ -1,0 +1,4 @@
+?package(xsnow): needs="X11" section="Games/Toys" \
+	title="Xsnow - Start" command="xsnow"
+?package(xsnow): needs="X11" section="Games/Toys" \
+        title="Xsnow - Stop" command="skill -c xsnow"

@@ -1,0 +1,4 @@
+# we depend on procps
+xsnow: menu-command-not-in-package /usr/share/menu/xsnow:4 skill
+# not sure if that is an allowed modification, so don't bother
+xsnow: hyphen-used-as-minus-sign

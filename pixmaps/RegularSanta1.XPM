@@ -1,0 +1,22 @@
+/* XPM */
+static char *RegularSanta1[] = {
+/* width height num_colors chars_per_pixel */
+"    56     8        7            1",
+/* colors */
+". c #ffffff",
+"# c #ff9999",
+"a c #ff0000",
+"b c none",
+"c c #663333",
+"d c #663300",
+"e c #000000",
+/* pixels */
+"bbbaa.bbbbbbbbbbbbbbbbbbbbbcbbbbbbbbbbbbbcbbbbbbbbbbbbbc",
+"bb.b#bbbbbbbbbbbbbbbbbbbcbcbbbbbbbbbbbcbcbbbbbbbbbbbcbcb",
+"bbbb#abbbbbbbbbbbbbbbbbbbcbbbbbbbbbbbbbcbbbbbbbbbbbbbcbb",
+"bebbaaa.eebbbbbbbbbbcbbbbcbbbebebbcbbbbcbbbbbbbbcbbbbcbb",
+"beb...aebbebbbbbbbbbbcccccbbbbbbbbbcccccbbbbbbbbbcccccbb",
+"beeeeaebbbeebebbebbbbccbcbbbbbbbbbbccbdbbbbebebbbccbcbbb",
+"bbebeba.beebbbbbbbbbccbbbcbbbbbbbbccbbbcbbbbbbbbccbbbcbb",
+"eeeeeeeeeebbbbbbbbbbcbbbbcbbbbbbbbcbbbbcbbbbbbbbcbbbbcbb"
+};

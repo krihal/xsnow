@@ -1,0 +1,16 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## 02_manpage.dpatch by <mlazar@kerio.com>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: New patch generated from xsnow 1.42-7 diff.gz
+
+@DPATCH@
+
+--- xsnow-1.42.orig/xsnow.man
++++ xsnow-1.42/xsnow.man
+@@ -1,4 +1,4 @@
+-.TH XSNOW 1 "Release 6" "X Version 11"
++.TH XSNOW 6 "Release 6" "X Version 11"
+ .SH NAME
+ xsnow \- let it snow on your desktop and windows
+ .SH SYNOPSIS

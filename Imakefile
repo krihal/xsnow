@@ -1,0 +1,7 @@
+SYS_LIBRARIES = -lm -lXpm
+LOCAL_LIBRARIES = $(XLIB)
+DEPLIBS = $(DEPXLIB)
+SRCS = xsnow.c toon_root.c xsnow.h vroot.h
+OBJS = xsnow.o toon_root.o
+
+ComplexProgramTarget(xsnow)

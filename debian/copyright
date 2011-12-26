@@ -1,0 +1,25 @@
+This is a Debian prepackaged version of xsnow.
+
+This package was put together by Joey Hess <joeyh@master.debian.org> and later
+maintained by Martin Schulze <joey@debian.org>, Adrian Bunk <bunk@fs.tum.de>,
+Randall Donald <rdonald@debian.org>, and Cai Qian <caiqian@debian.org>. Current
+maintained by Martin Lazar <mlazar@email.cz>.
+
+It was downloaded from http://dropmix.xs4all.nl/rick/Xsnow/
+
+This package is not part of Debian main because its license only allows
+modifications for the purpose of packaging but not arbitrary modifications.
+
+Copyright:
+
+   Copyright 1984, 1988, 1990, 1993-1995, 2000-2001 by Rick Jansen, all rights
+   reserved. 
+
+   This means Xsnow is available freely and you may give it to other
+   people as is, but I retain all rights. Therefore it does not classify
+   as 'Public Domain' software. It *is* allowed to package Xsnow for
+   Unix/Linux distributions, CD-Roms etc, and to make the necessary
+   changes to makefiles etc. to facilitate this.
+
+   Permission to use and distribute Robin Hogan's toon_root.c under the terms
+   of the xsnow license when used as part of xsnow has been obtained.

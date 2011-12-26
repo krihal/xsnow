@@ -1,0 +1,13 @@
+Source: xsnow
+Section: non-free/games
+Priority: optional
+Maintainer: Martin Lazar <mlazar@email.cz>
+Build-Depends: debhelper (>= 7), dpatch (>= 2), libx11-dev, libxext-dev, libxpm-dev, libxt-dev, xutils-dev
+Standards-Version: 3.8.0
+
+Package: xsnow
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, procps
+Description: Brings Christmas to your desktop
+ Xsnow is a X Window application that will snow on the desktop background.
+ Santa and his reindeer will complete your festive-season feeling.
