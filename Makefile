@@ -873,45 +873,79 @@ depend::
 
 # DO NOT DELETE
 xsnow.o: xsnow.c /usr/include/X11/Intrinsic.h \
- /usr/include/X11/Xlib.h /usr/include/sys/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h /usr/include/bits/types.h \
+ /usr/include/X11/Xlib.h \
+ /usr/include/x86_64-linux-gnu/sys/types.h \
+ /usr/include/features.h \
+ /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.4/include/stddef.h \
- /usr/include/time.h /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/sys/sysmacros.h \
- /usr/include/X11/X.h /usr/include/X11/Xfuncproto.h \
- /usr/include/X11/Xosdefs.h /usr/include/X11/Xutil.h \
- /usr/include/X11/Xresource.h /usr/include/string.h \
- /usr/include/X11/Core.h /usr/include/X11/Composite.h \
- /usr/include/X11/Constraint.h /usr/include/X11/Object.h \
- /usr/include/X11/RectObj.h /usr/include/X11/Xos.h \
- /usr/include/fcntl.h /usr/include/bits/fcntl.h \
- /usr/include/sys/stat.h /usr/include/bits/stat.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
- /usr/include/sys/time.h /usr/include/bits/time.h \
- /usr/include/X11/Xarch.h /usr/include/X11/xpm.h \
+ /usr/include/time.h \
+ /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endian.h \
+ /usr/include/x86_64-linux-gnu/sys/select.h \
+ /usr/include/x86_64-linux-gnu/bits/select.h \
+ /usr/include/x86_64-linux-gnu/bits/sigset.h \
+ /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
+ /usr/include/X11/X.h \
+ /usr/include/X11/Xfuncproto.h \
+ /usr/include/X11/Xosdefs.h \
+ /usr/include/X11/Xutil.h \
+ /usr/include/X11/Xresource.h \
+ /usr/include/string.h \
+ /usr/include/X11/Core.h \
+ /usr/include/X11/Composite.h \
+ /usr/include/X11/Constraint.h \
+ /usr/include/X11/Object.h \
+ /usr/include/X11/RectObj.h \
+ /usr/include/X11/Xos.h \
+ /usr/include/fcntl.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+ /usr/include/x86_64-linux-gnu/sys/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/stat.h \
+ /usr/include/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/getopt.h \
+ /usr/include/x86_64-linux-gnu/sys/time.h \
+ /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/X11/Xarch.h \
+ /usr/include/X11/xpm.h \
  /usr/include/stdio.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.4/include/stdarg.h \
- /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
- /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/include/bits/stdio_lim.h /usr/include/math.h \
- /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h \
- /usr/include/bits/mathcalls.h \
+ /usr/include/libio.h \
+ /usr/include/_G_config.h \
+ /usr/include/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/gconv.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+ /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/huge_val.h \
+ /usr/include/x86_64-linux-gnu/bits/mathdef.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.4/include/float.h \
- /usr/include/signal.h /usr/include/bits/signum.h \
- /usr/include/bits/siginfo.h /usr/include/bits/wordsize.h \
- /usr/include/bits/sigaction.h /usr/include/bits/sigcontext.h \
- /usr/include/asm/sigcontext.h /usr/include/bits/sigstack.h \
- /usr/include/ucontext.h /usr/include/sys/ucontext.h \
+ /usr/include/signal.h \
+ /usr/include/x86_64-linux-gnu/bits/signum.h \
+ /usr/include/x86_64-linux-gnu/bits/siginfo.h \
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+ /usr/include/x86_64-linux-gnu/bits/sigaction.h \
+ /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
+ /usr/include/x86_64-linux-gnu/asm/sigcontext.h \
+ /usr/include/x86_64-linux-gnu/bits/sigstack.h \
+ /usr/include/ucontext.h \
+ /usr/include/x86_64-linux-gnu/sys/ucontext.h \
  /usr/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.4/include-fixed/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
- /usr/include/stdlib.h /usr/include/bits/waitflags.h \
- /usr/include/bits/waitstatus.h /usr/include/alloca.h xsnow.h \
+ /usr/include/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/stdlib.h \
+ /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+ /usr/include/alloca.h xsnow.h \
  pixmaps/snow00.xbm pixmaps/snow01.xbm pixmaps/snow02.xbm \
  pixmaps/snow03.xbm pixmaps/snow04.xbm pixmaps/snow05.xbm \
  pixmaps/snow06.xbm pixmaps/tannenbaum.xbm pixmaps/BigSanta1.XPM \
@@ -928,30 +962,54 @@ xsnow.o: xsnow.c /usr/include/X11/Intrinsic.h \
  pixmaps/RegularSantaRudolf3.XPM pixmaps/RegularSantaRudolf4.XPM \
  toon.h /usr/include/X11/extensions/shape.h
 toon_root.o: toon_root.c toon.h /usr/include/X11/Intrinsic.h \
- /usr/include/X11/Xlib.h /usr/include/sys/types.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h /usr/include/bits/types.h \
+ /usr/include/X11/Xlib.h \
+ /usr/include/x86_64-linux-gnu/sys/types.h \
+ /usr/include/features.h \
+ /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.4/include/stddef.h \
- /usr/include/time.h /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/sys/sysmacros.h \
- /usr/include/X11/X.h /usr/include/X11/Xfuncproto.h \
- /usr/include/X11/Xosdefs.h /usr/include/X11/Xutil.h \
- /usr/include/X11/Xresource.h /usr/include/string.h \
- /usr/include/X11/Core.h /usr/include/X11/Composite.h \
- /usr/include/X11/Constraint.h /usr/include/X11/Object.h \
- /usr/include/X11/RectObj.h /usr/include/X11/Xos.h \
- /usr/include/fcntl.h /usr/include/bits/fcntl.h \
- /usr/include/sys/stat.h /usr/include/bits/stat.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/confname.h /usr/include/getopt.h \
- /usr/include/sys/time.h /usr/include/bits/time.h \
- /usr/include/X11/Xarch.h /usr/include/X11/xpm.h \
+ /usr/include/time.h \
+ /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endian.h \
+ /usr/include/x86_64-linux-gnu/sys/select.h \
+ /usr/include/x86_64-linux-gnu/bits/select.h \
+ /usr/include/x86_64-linux-gnu/bits/sigset.h \
+ /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
+ /usr/include/X11/X.h \
+ /usr/include/X11/Xfuncproto.h \
+ /usr/include/X11/Xosdefs.h \
+ /usr/include/X11/Xutil.h \
+ /usr/include/X11/Xresource.h \
+ /usr/include/string.h \
+ /usr/include/X11/Core.h \
+ /usr/include/X11/Composite.h \
+ /usr/include/X11/Constraint.h \
+ /usr/include/X11/Object.h \
+ /usr/include/X11/RectObj.h \
+ /usr/include/X11/Xos.h \
+ /usr/include/fcntl.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+ /usr/include/x86_64-linux-gnu/sys/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/stat.h \
+ /usr/include/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/getopt.h \
+ /usr/include/x86_64-linux-gnu/sys/time.h \
+ /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/X11/Xarch.h \
+ /usr/include/X11/xpm.h \
  /usr/include/X11/extensions/shape.h \
- /usr/include/X11/Xatom.h /usr/include/X11/Xproto.h \
- /usr/include/X11/Xmd.h /usr/include/X11/Xprotostr.h \
+ /usr/include/X11/Xatom.h \
+ /usr/include/X11/Xproto.h \
+ /usr/include/X11/Xmd.h \
+ /usr/include/X11/Xprotostr.h \
  /usr/include/stdio.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.4/include/stdarg.h \
- /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
- /usr/include/bits/wchar.h /usr/include/gconv.h \
- /usr/include/bits/stdio_lim.h
+ /usr/include/libio.h \
+ /usr/include/_G_config.h \
+ /usr/include/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/gconv.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
